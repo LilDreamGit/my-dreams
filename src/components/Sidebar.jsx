@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMusic, faRoad, faGlobe, faChartBar, faSkull } from '@fortawesome/free-solid-svg-icons';
+import { faMusic, faRoad, faGlobe, faChartBar, faSkull, faSeedling } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 function Sidebar({ isMobile, mobileSidebarOpen, setMobileSidebarOpen, desktopSidebarOpen, setDesktopSidebarOpen }) {
@@ -9,6 +9,7 @@ function Sidebar({ isMobile, mobileSidebarOpen, setMobileSidebarOpen, desktopSid
     { icon: faSkull, label: 'Curses', path: '/curses' },
     { icon: faGlobe, label: 'World Map', path: '/worldmap' },
     { icon: faChartBar, label: 'Charts', path: '/charts' },
+    { icon: faSeedling, label: 'Grow', path: '/grow' },
   ];
 
   return (

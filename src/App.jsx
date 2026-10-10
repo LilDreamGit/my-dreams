@@ -15,6 +15,7 @@ import Charts from './components/Charts/Charts';
 import NotFound from './components/NotFound';
 import Easy from './components/Songs/Songs/Easy';
 import RED from './components/Songs/Songs/RED';
+import Grow from './components/Grow/Grow';
 
 function App() {
   const isMobile = window.innerWidth < 768;
@@ -52,6 +53,7 @@ function App() {
           <Route path="/curses" element={<Curses />} />
           <Route path="/worldmap" element={<WorldMap />} />
           <Route path="/charts" element={<Charts />} />
+          <Route path="/grow" element={<Grow />} />
           
           {/* Catch-all 404 Route */}
           <Route path="*" element={<NotFound/>} />
