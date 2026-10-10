@@ -1,11 +1,15 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
+import checker from 'vite-plugin-checker';
 
 export default defineConfig({
-  base: '/',  // Normal base path for local dev
+  base: '/',
   plugins: [
     react(),
-    tailwindcss()
-  ]
+    tailwindcss(),
+    checker({
+      typescript: true,
+    }),
+  ],
 });

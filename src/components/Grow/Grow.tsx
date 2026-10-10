@@ -9,7 +9,7 @@ interface SensorData {
 }
 
 export default function Grow() {
-  const [sensors, setSensors] = useState<SensorData | null>(123);
+  const [sensors, setSensors] = useState<SensorData | null>(null);
   const [error, setError] = useState(false);
 
   const fetchSensors = async (): Promise<void> => {
